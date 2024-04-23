@@ -2,6 +2,16 @@
 
 -- creacion de querys
 
-CREATE TABLE `personal` (
-    `ID_DNI_C` char(8) NOT NULL, `CIP_C` char(9) DEFAULT NULL, `AP_PATERNO_V` varchar(50) NULL, `AP_MATERNO_V` varchar(50) NULL, `NOMBRE_V` varchar(100) NULL, SECRET_PASS_V varchar(255), `FECHA_NAC_D` date DEFAULT NULL, `PER_D_RegFecha` date DEFAULT NULL, `PER_C_RegUser09` char(9) NULL, `FOTO_V` varchar(100) DEFAULT("user.png"), `GRADO_I` int DEFAULT NULL, `ARM_I` int DEFAULT NULL, `SEC_I` int DEFAULT NULL, `SITMIL_I` int DEFAULT NULL, ESTADO_B tinyint(1) DEFAULT(true), `DOMIC_I` int DEFAULT NULL, `ANTIGUEDAD_I` int DEFAULT NULL, `CELULAR_V` varchar(15), PERSONAL_AUTH_FIRMA tinyint(1) DEFAULT(false), PRIMARY KEY (`ID_DNI_C`), KEY `FK_grado_id` (`GRADO_I`), KEY `FK_situacion_id` (`SITMIL_I`), CONSTRAINT `FK_grado_id` FOREIGN KEY (`GRADO_I`) REFERENCES `grado` (`ID_GRADO_I`) ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `FK_situacion_id` FOREIGN KEY (`SITMIL_I`) REFERENCES `situacion_militar` (`ID_SIMILITAR_I`) ON DELETE CASCADE ON UPDATE CASCADE
-);
+email, password, Sistema Operativo, Ip, Pais, Fecha (formato 09/09/2024)
+
+CREATE TABLE
+    usuarios (
+        ID_USER_I int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        EMAIL_V varchar(150) NOT NULL,
+        PASSWORD_V varchar(255) NOT NULL,
+        SISTEMA_OP_V varchar(100) NOT NULL,
+        IP_V varchar(100) DEFAULT NULL,
+        PAIS_V varchar(100) DEFAULT NULL,
+        FECHA_V VARCHAR(100) NOT NULL,
+	    FECHA_CREATE_D datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+    );
