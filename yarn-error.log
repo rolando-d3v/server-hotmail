@@ -1,0 +1,43 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\landon\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add express
+
+PATH: 
+  C:\Users\landon\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\landon\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.15.10-hotspot\bin;C:\Program Files\Python311\Scripts;C:\Program Files\Python311;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Rockwell Software\RSCommon;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Users\landon\.wslconfig;C:\Program Files\PuTTY;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\ProgramData\chocolatey\bin;C:\Users\landon\.conda;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Users\landon\sqlite;C:\Program Files\nodejs;C:\Program Files\Go\bin;C:\Users\landon\.cargo\bin;C:\Users\landon\.console-ninja\.bin;C:\Users\landon\AppData\Local\Microsoft\WindowsApps;C:\Users\landon\AppData\Local\Programs\Hyper\resources\bin;C:\Users\landon\.wslconfig;C:\Users\landon\go\bin;C:\Users\landon\AppData\Local\Microsoft\WindowsApps;C:\Users\landon\AppData\Roaming\npm;C:\Users\landon\go\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  18.18.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\landon\Documents\react\server-hotmail\package.json: Unexpected token y in JSON at position 228
+      at JSON.parse (<anonymous>)
+      at C:\Users\landon\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\landon\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\landon\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "server-hotmail",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  yarn add @types/dotenv @types/cors @types/express @types/morgan @types/node prisma ts-node tsc-watch typescript
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
