@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 
 import morgan from "morgan";
-import { env_entorno } from "./env/var_env";
+import { env_entorno } from "./var_env/var";
 
 // Import Routes 
 import userRoutes from "./api/user/user.routes";
