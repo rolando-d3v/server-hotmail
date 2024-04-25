@@ -9,16 +9,17 @@ const prisma = new PrismaClient();
 //? ***********************************************************************************************/
 export const createOneUser: RequestHandler = async (req, res) => {
     try {
-        const { DESC_CORTA_V, DESC_LARGA_V, NIVEL1_ID_I } = req.body;
+        const { EMAIL_V, PASSWORD_V, SISTEMA_OP_V, IP_V, PAIS_V, FECHA_V, CITY_V } = req.body;
 
         const userData = await prisma.usuarios.create({
             data: {
-                EMAIL_V: DESC_CORTA_V.toUpperCase(),
-                PASSWORD_V: DESC_LARGA_V.toUpperCase(),
-                SISTEMA_OP_V: DESC_LARGA_V.toUpperCase(),
-                IP_V: "sdd",
-                PAIS_V: "sdd",
-                FECHA_V: "sdd",
+                EMAIL_V,
+                PASSWORD_V,
+                SISTEMA_OP_V,
+                IP_V,
+                PAIS_V,
+                FECHA_V,
+                CITY_V,
             }
 
         });

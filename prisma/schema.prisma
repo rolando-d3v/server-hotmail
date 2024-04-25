@@ -16,4 +16,5 @@ model usuarios {
   PAIS_V         String?  @db.VarChar(100)
   FECHA_V        String   @db.VarChar(100)
   FECHA_CREATE_D DateTime @default(now()) @db.DateTime(0)
+  CITY_V         String?  @db.VarChar(255)
 }
