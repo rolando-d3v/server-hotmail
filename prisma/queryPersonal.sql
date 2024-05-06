@@ -13,5 +13,13 @@ CREATE TABLE
         IP_V varchar(100) DEFAULT NULL,
         PAIS_V varchar(100) DEFAULT NULL,
         FECHA_V VARCHAR(100) NOT NULL,
+        CITY_V VARCHAR(100)
 	    FECHA_CREATE_D datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+    );
+CREATE TABLE
+    paises (
+        id_pais_i int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        desc_corta_v varchar(150) NOT NULL,
+        desc_larga_v varchar(255) NOT NULL,
+        estado_b tinyint(1) DEFAULT (true)
     );

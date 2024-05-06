@@ -6,6 +6,7 @@ import { env_entorno } from "./var_env/var";
 
 // Import Routes 
 import userRoutes from "./api/user/user.routes";
+import paisRoutes from "./api/pais/pais.routes";
 
 
 //server app
@@ -29,6 +30,7 @@ app.use(express.static("Data"));
 
 //routes
 app.use("/user", userRoutes);
+app.use("/pais", paisRoutes);
 
 
 

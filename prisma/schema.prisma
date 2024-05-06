@@ -15,6 +15,13 @@ model usuarios {
   IP_V           String?  @db.VarChar(100)
   PAIS_V         String?  @db.VarChar(100)
   FECHA_V        String   @db.VarChar(100)
+  CITY_V         String?  @db.VarChar(100)
   FECHA_CREATE_D DateTime @default(now()) @db.DateTime(0)
-  CITY_V         String?  @db.VarChar(255)
+}
+
+model paises {
+  id_pais_i    Int      @id @default(autoincrement())
+  desc_corta_v String   @db.VarChar(150)
+  desc_larga_v String   @db.VarChar(255)
+  estado_b     Boolean? @default(true)
 }
