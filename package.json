@@ -1,9 +1,7 @@
 {
   "name": "server-hotmail",
   "version": "1.0.0",
-  "engines": {
-    "node": "18.18.2"
-  },
+  "ver_node": "18.18.2",
   "description": "",
   "main": "index.js",
   "scripts": {
